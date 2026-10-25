@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff5f2">
+    <meta name="description" content="Una pequeña historia de nuestro amor hecha con cariño.">
+    <title>Felices 3 meses</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <audio id="cancion" src="Audio/cancion.mp3" preload="auto" loop></audio>
+    <main class="pagina">
+        <div class="decoracion decoracion-superior" aria-hidden="true">♡</div>
+        <div class="decoracion decoracion-inferior" aria-hidden="true">✿</div>
+
+        <section class="invitacion" id="invitacion">
+            <p class="etiqueta">UNA CARTA PARA MI AMOR · 25.10.26</p>
+            <div class="corazon-principal" aria-hidden="true">♥</div>
+
+            <p class="texto-pequeno">Tengo algo que quiero mostrarte...</p>
+
+            <h1>
+                ¿Quieres ver el regalito
+                <span>que te hice?</span>
+            </h1>
+
+            <p class="descripcion">
+                Hoy quiero compartir contigo un paseo por algunos recuerdos
+                nuestros y unas lindas palabras.
+            </p>
+
+            <div class="botones">
+                <button class="boton-si" id="botonSi">Sí, quiero verlo</button>
+                <button class="boton-no" id="botonNo">No</button>
+            </div>
+
+            <p class="nota" id="nota">Elegí sabiamente...</p>
+        </section>
+
+        <section class="portada oculto" id="portada">
+            <p class="etiqueta">CAMIVANS</p>
+
+            <div class="marco-foto">
+                <img src="img/portada/primera-foto.png" alt="Un recuerdo muy especial de nosotros" class="foto-portada">
+            </div>
+
+            <p class="texto-pequeno">Desde que la vida nos acercaba sin saberlo...</p>
+
+            <h2>Un año después<br>se nos dió</h2>
+
+            <p class="descripcion">
+                Una historia de casualidades, miradas, aventuras
+                y un beso que llevaba mucho tiempo esperando.
+            </p>
+
+            <div class="separador">✦ ♡ ✦</div>
+
+            <p class="dedicatoria">Felices tres meses, Evans de mi corazón</p>
+            <p class="firma">Con todo mi cariño y aprecio</p>
+
+            <div class="experiencia">
+
+                <h2 class="titulo-recuerdos">Nuestros recuerdos ♡</h2>
+
+                <p class="descripcion">
+                    Hay momentos que merecen volver a vivirse.
+                    Elige un capítulo para descubrirlo.
+                </p>
+
+                <div class="recuerdos-grid">
+                    <button class="recuerdo-card" data-recuerdo="0">
+                        <span>01</span>
+                        <strong>El comienzo</strong>
+                        <small>Donde todo empezó</small>
+                    </button>
+
+                    <button class="recuerdo-card" data-recuerdo="1">
+                        <span>02</span>
+                        <strong>Nuestros momentos</strong>
+                        <small>Pequeños grandes recuerdos</small>
+                    </button>
+
+                    <button class="recuerdo-card" data-recuerdo="2">
+                        <span>03</span>
+                        <strong>Estos tres meses</strong>
+                        <small>Y todo lo que significan</small>
+                    </button>
+                </div>
+
+                <div class="recuerdo-detalle oculto" id="recuerdoDetalle">
+                    <span class="detalle-corazon" aria-hidden="true">♡</span>
+                    <h2 id="recuerdoTitulo"></h2>
+                    <p id="recuerdoTexto"></p>
+
+                    <img id="fotoRecuerdo" class="foto-recuerdo" src="" alt="">
+
+                    <button class="boton-si" id="cerrarRecuerdo">
+                        Volver a los capítulos
+                    </button>
+                </div>
+            </div>
+            <section class="sorpresa-ramo" id="sorpresaRamo">
+                <button class="boton-si" id="botonRamo" type="button">
+                    Aquí hay una sorpresita para ti ♡
+                </button>
+
+                <div class="bouquet-pixel oculto" id="contenedorRamo">
+                    <canvas id="bouquetCanvas" aria-label="Un ramo de flores pixel art dibujado poco a poco">
+                    </canvas>
+
+                    <p class="mensaje-ramo">Te amo mi vida</p>
+
+                    <button class="boton-volver" id="botonVolverInicio" type="button">
+                        Volver al inicio ↑
+                    </button>
+                </div>
+            </section>
+        </section>
+
+        <footer class="pie">
+            <span>HECHO CON AMOR</span>
+            <span>♡</span>
+            <span>25 · 10 · 2026</span>
+        </footer>
+    </main>
+</body>
+
+</html>
